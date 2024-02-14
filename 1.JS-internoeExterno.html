@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js interno e externo</title>
+
+    <!--
+        Nota: Sobre href vs src, já foi mencionado nos comentários, 
+        mas você usa href com <link> e src com <script> (e <img>): src não é um atributo válido para <link>.
+    -->
+
+</head>
+<body>
+    
+<script>
+// Esse é o js INTERNO pois a ação em js está no código html
+// alert('Olá, mundo!');
+</script>
+
+
+<script src="1.index.js">
+// O EXTERNO é quando as funcionalidades estão em um arquivo fora e são conectados pelo src 
+// DICA: coloque o script desse js antes da tag final do body
+
+</script>
+
+</body>
+</html>
