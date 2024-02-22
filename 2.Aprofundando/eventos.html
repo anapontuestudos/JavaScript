@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+
+<body onload="alert('Ativou o onload')" onresize="console.log('A página foi redimensionada')">
+<!--onload: quando a página termina de carregar dispara o evento-->
+
+
+<h1>Eventos no js</h1>
+<!--onclick: ativa o evento com um click-->
+<button onclick="eventoClick()">onclick</button>
+<br><br>
+
+
+<!--ondblclick: ativa o evento com dois clicks-->
+<button ondblclick="duploClick()">ondblclick</button>
+<br><br>
+
+
+<!--onmouseover: quando colocar o mouse sobre algo o evento dispara
+    onmouseoult: ao tirar o mouse do elemento dispara o evento-->
+<div id="muda" onmouseover="vermelho()" onmouseout="azul()"
+style="height: 200px; width: 80%; margin: auto auto; background-color: blue;"></div>
+<br><br>
+
+
+<!--onmousemove: quando mover o mouse no elemento dispara o evento-->
+<h1 onmousemove= "adicionarTexto()" id="texto">Mova o mouse aqui!</h1>
+<br><br>
+
+
+<!--onmousedown: dispara quando o clique do botão for pressionado
+    onmouseup: dispara depois que o clique for pressionado-->
+
+<h1 onmousedown="alert('Você ativou o onmousedown')">Pressione aqui!</h1>
+
+<h2 onmouseup="alert('Você ativou o onmouseup')">Pressione aqui!</h2>
+<br><br>
+
+
+<!--onfocus: quando o  elemento recebe foco o evento é disparado-->
+<input type="text" placeholder="Digite algo" onfocus="alert('você ativou o onfocus')">
+<br><br>
+
+<!--onchange: disparado quando existe uma mudança no conteúdo
+    onblur: quando o conteúdo sai do foco dispara o alerta
+-->
+<input type="text" placeholder="Digite algo" onchange="mudou()">
+
+
+<script src="5.Eventos.js"></script>
+</body>
+</html>
