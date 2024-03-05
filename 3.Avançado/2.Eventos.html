@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos com tempo em js</title>
+
+    <style>
+    
+    .start{
+
+        background-color: red;
+    }
+
+    .stop{
+        background-color: green;
+    }
+
+    .começar{
+        background-color: rgb(0, 169, 28);
+    }
+
+    .para{
+        background-color: rgb(215, 58, 58);
+    }
+
+    </style>
+
+
+</head>
+<body>
+    
+    <h1>Crontole de tempo</h1>
+    <h2 id="texto">0</h2>
+    <button onclick="ativarContagem()" class="start">Ativar cronometragem</button>
+    <button onclick="pararContagem()" class="stop">Parar cronometragem</button>
+
+
+    <h1>Cronômetro</h1>
+    <h2 id="texto2">0</h2>
+    <button onclick="começarContagem()" class="começar">Iniciar cronometro</button>
+    <button onclick="paraContagem()" class="para">Parar o cronometro</button>
+
+<script src="2.EventosdeTempo.js"></script>
+</body>
+</html>
